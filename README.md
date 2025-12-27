@@ -2,7 +2,7 @@
 
 <img src="https://railway.com/brand/logo-light.svg" width="128" /> <img src="https://bun.com/logo.svg" width="128" /> <img src="https://elysiajs.com/assets/elysia.svg" width="128" />
 
-[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/fXxHZK?referralCode=p_bl_z&utm_medium=integration&utm_source=template&utm_campaign=generic)
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/bun-elysia-react-monorepo?referralCode=p_bl_z&utm_medium=integration&utm_source=template&utm_campaign=generic)
 
 A production-ready monorepo template featuring **Bun** as the package manager and runtime, **Elysia** as the API framework, and **React + Vite** for the frontend. Designed for seamless deployment on Railway with end-to-end type safety between frontend and backend.
 
