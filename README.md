@@ -99,9 +99,9 @@ bun-monorepo-railway/
 
 | Package | Version | Purpose |
 |---------|---------|---------|
-| [React](https://react.dev) | ^19.2.0 | UI library for building component-based interfaces. |
-| [Vite](https://vite.dev) | ^7.2.4 | Build tool with instant HMR and optimized production builds. |
-| [TailwindCSS](https://tailwindcss.com) | ^4.1.17 | Utility-first CSS framework. V4 uses the new native engine for faster builds. |
+| [React](https://react.dev) | ^19.2.3 | UI library for building component-based interfaces. |
+| [Vite](https://vite.dev) | ^7.3.0 | Build tool with instant HMR and optimized production builds. |
+| [TailwindCSS](https://tailwindcss.com) | ^4.1.18 | Utility-first CSS framework. V4 uses the new native engine for faster builds. |
 | [TanStack Query](https://tanstack.com/query) | ^5.90.12 | Server state management with caching, background updates, and mutations. |
 | [React Hook Form](https://react-hook-form.com) | ^7.69.0 | Performant form handling with minimal re-renders. |
 | [Arktype](https://arktype.io) | ^2.1.29 | Runtime type validation with TypeScript-first syntax. Used for form schema validation. |
