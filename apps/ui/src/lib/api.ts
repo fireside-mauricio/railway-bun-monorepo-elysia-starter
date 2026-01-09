@@ -1,5 +1,5 @@
-import type { App } from "@bun-monorepo-railway/contracts";
 import { treaty } from "@elysiajs/eden";
+import type { App } from "@fireside-dashboard/contracts";
 
 /**
  * Type-safe API client using Eden Treaty.

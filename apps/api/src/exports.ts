@@ -1,5 +1,5 @@
 /**
- * @bun-monorepo-railway/api - External Type Exports
+ * @fireside-dashboard/api - External Type Exports
  *
  * This file defines the PUBLIC type interface for the API package.
  * Only types are exported - NO runtime code should ever be exported from this file.
@@ -12,9 +12,9 @@
  * - This file is the ONLY entry point for external type consumers
  *
  * @usage
- * External packages should import via @bun-monorepo-railway/contracts, which re-exports these types:
+ * External packages should import via @fireside-dashboard/contracts, which re-exports these types:
  * ```ts
- * import type { App } from "@bun-monorepo-railway/contracts";
+ * import type { App } from "@fireside-dashboard/contracts";
  * ```
  *
  * @note

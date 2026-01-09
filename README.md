@@ -28,7 +28,7 @@ The architecture ensures each service can scale independently while maintaining 
 │                                                                                 │
 │   ┌────────────────────────┐     Public Network     ┌───────────────────────┐   │
 │   │                        │◄──────────────────────►│                       │   │
-│   │ @bun-monorepo-railway  │                        │ @bun-monorepo-railway │   │
+│   │ @fireside-dashboard  │                        │ @fireside-dashboard │   │
 │   │         /api           │                        │        /ui            │   │
 │   │                        │                        │                       │   │
 │   │    ┌─────────────┐     │    Type-Safe API       │      ┌──────────┐     │   │
@@ -42,7 +42,7 @@ The architecture ensures each service can scale independently while maintaining 
 │                                         │                                       │
 │                                         ▼                                       │
 │                       ┌──────────────────────────────────────┐                  │
-│                       │   @bun-monorepo-railway/contracts    │                  │
+│                       │   @fireside-dashboard/contracts    │                  │
 │                       │                                      │                  │
 │                       │       Shared Type Exports            │                  │
 │                       │       (Type-only package)            │                  │
@@ -65,7 +65,7 @@ The architecture ensures each service can scale independently while maintaining 
 ## Project Structure
 
 ```
-bun-monorepo-railway/
+fireside-dashboard/
 ├── apps/
 │   ├── api/          # Elysia backend server
 │   └── ui/           # React + Vite frontend
@@ -250,7 +250,7 @@ cd packages/new-package
 bun init -y
 ```
 
-Update the package name to follow the `@bun-monorepo-railway/` scope.
+Update the package name to follow the `@fireside-dashboard/` scope.
 
 ### New App
 

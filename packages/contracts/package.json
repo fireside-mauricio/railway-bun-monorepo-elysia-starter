@@ -1,5 +1,5 @@
 {
-	"name": "@bun-monorepo-railway/contracts",
+	"name": "@fireside-dashboard/contracts",
 	"private": true,
 	"version": "1.0.0",
 	"type": "module",
@@ -11,6 +11,6 @@
 		}
 	},
 	"devDependencies": {
-		"@bun-monorepo-railway/api": "workspace:*"
+		"@fireside-dashboard/api": "workspace:*"
 	}
 }

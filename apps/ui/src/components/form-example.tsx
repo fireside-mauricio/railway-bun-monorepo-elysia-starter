@@ -1,9 +1,10 @@
-import { arktypeResolver } from "@hookform/resolvers/arktype";
+import { zodResolver } from "@hookform/resolvers/zod";
 import { useMutation } from "@tanstack/react-query";
-import { type } from "arktype";
 import { useState } from "react";
 import { Controller, useForm } from "react-hook-form";
 import { toast } from "sonner";
+import { z } from "zod";
+
 import { Button } from "@/components/ui/button";
 import {
 	Card,
@@ -36,20 +37,18 @@ const roleItems = [
 ] as const;
 
 /**
- * Form validation schema using Arktype.
+ * Form validation schema using Zod.
  * - name: Required string (non-empty)
  * - role: Optional role selection (can be null)
  * - comments: Optional string
  */
-const formSchema = type({
-	name: type("string>0").configure({
-		message: () => "Name is required",
-	}),
-	role: '("developer" | "designer" | "manager" | "other") | null',
-	comments: "string | undefined",
+const formSchema = z.object({
+	name: z.string().min(1, "Name is required"),
+	role: z.enum(["developer", "designer", "manager", "other"]).nullable(),
+	comments: z.string().optional(),
 });
 
-type FormData = typeof formSchema.infer;
+type FormData = z.infer<typeof formSchema>;
 
 const defaultValues: FormData = {
 	name: "",
@@ -61,7 +60,7 @@ const defaultValues: FormData = {
  * FormExample component - A user information form with validation.
  *
  * Features:
- * - Form validation using React Hook Form with Arktype resolver
+ * - Form validation using React Hook Form with Zod resolver
  * - Async form submission using TanStack Query
  * - Toast notifications for success/error states
  * - Responsive layout with centered card design
@@ -75,7 +74,7 @@ export function FormExample() {
 		formState: { errors },
 		reset,
 	} = useForm<FormData>({
-		resolver: arktypeResolver(formSchema),
+		resolver: zodResolver(formSchema),
 		defaultValues,
 	});
 
